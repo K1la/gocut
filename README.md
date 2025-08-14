@@ -52,8 +52,8 @@ cat <файл> | ./cut -f "<поля>" -d "<разделитель>" -s
 Файл `data.txt`:
 
 ```
-a\tb\tc
-1\t2\t3
+a   b   c
+1   2    3
 no_delim
 ```
 
@@ -66,8 +66,8 @@ Get-Content data.txt | .\cut.exe -f "1,3"
 Ожидаемый вывод:
 
 ```
-a\tc
-1\t3
+a   c
+1   3
 no_delim
 ```
 
